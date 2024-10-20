@@ -1,0 +1,241 @@
+
+
+.event-area {
+	background-size: cover;
+	background-position: center top;
+	position: relative;
+	margin-top: -100px;
+	z-index: 2;
+	object-fit: cover;
+}
+  .event-title span {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: .25px;
+  }
+  .event-title h2 {
+    color: #fff;
+    font-family: 'Titillium-black';
+    text-transform: uppercase;
+    margin-top: 12px;
+    line-height: 1;
+  }
+  .event-title {
+    position: relative;
+  }
+  .event-shape img {
+    width: 290px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+  }
+  .event-shape.event-shape-2 img {
+    left: auto;
+    right: 100px;
+  }
+  .single-event {
+    text-align: center;
+    background: #FF9C00;
+    padding: 7px;
+    padding-top: 12px;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .single-event h4 {
+    font-size: 28px;
+    color: #fff;
+    letter-spacing: .25px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+  .event-text {
+    padding: 5px;
+    background: #fff;
+    border-radius: 0 0 20px 20px;
+    padding-top: 7px;
+  }
+  .event-text p {
+    color: #5f00c1;
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 6px;
+    line-height: 1;
+  }
+  .event-text span {
+    display: block;
+    color: #5f00c1;
+    font-size: 19px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .event-text a img {
+    width: auto !important;
+    display: inline-block !important;
+    margin: auto;
+    margin-bottom: 12px;
+  }
+  .event-btn {
+    display: flex;
+  }
+  .event-btn a {
+    width: 50%;
+    background: #5F00C1;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0px 0px 0px 20px;
+  }
+  .event-btn a:last-child {
+    border-radius: 0 0px 20px 0;
+    background: #15E000;
+  }
+  .event-btn a:hover {
+    background: #FF9C00;
+  }
+  
+.btn-style {
+    display: inline-block;
+    background: #FFF000;
+    font-size: 24px;
+    text-transform: uppercase;
+    width: 290px;
+    height: 40px;
+    position: relative;
+    line-height: 40px;
+    color: #000;
+    overflow: hidden;
+  }
+  .btn-style:hover {
+    background: #FF9C00;
+    color: #fff;
+  }
+  .btn-style::before, .btn-style::after {
+    position: absolute;
+    content: '';
+    background: #FF9C00;
+    width: 32px;
+    height: 100%;
+    left: -15px;
+    top: 0;
+    transform: skew(-35deg);
+    transition: .3s;
+  }
+  .btn-style::after {
+    left: auto;
+    right: -16px;
+    transform: skew(-35deg);
+  }
+  .btn-style:hover::before, .btn-style:hover::after {
+    background: #FFF000;
+  }
+  .event-active.owl-carousel {
+    padding: 0 13.8%;
+  }
+  .event-active.owl-carousel .owl-nav div {
+	top: 50%;
+	transform: translateY(-50%);
+}
+  .event-active.owl-carousel .owl-nav div.owl-next {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+
+
+
+/* responsive here */
+
+  @media (max-width: 3000px){
+	.event-area {
+        margin-top: -81px;
+    }
+  }
+  @media (max-width: 2500px){
+	.event-area {
+        margin-top: -65px;
+    }
+  }
+  @media (max-width: 2000px){
+	.event-area {
+        margin-top: -60px;
+    }
+  }
+  /* laptop */
+  @media (max-width: 1800px){
+	.event-active.owl-carousel {
+        padding: 0 8.4%;
+    }
+    .event-area {
+        margin-top: -51px;
+    }
+  }
+  /* laptop */
+  @media (max-width: 1600px){
+	.event-active.owl-carousel {
+        padding: 0 6%;
+    }
+    .event-area {
+        margin-top: -45px;
+    }
+  }
+  /* laptop */
+  @media (max-width: 1400px){
+    .event-active.owl-carousel {
+      padding: 0 7%;
+    }
+    .event-area {
+      margin-top: -35px;
+    }
+  }
+  
+    /* mini laptop */
+  @media (max-width: 1200px){
+    .event-area {
+      margin-top: -25px;
+    }
+    .owl-dots {
+      bottom: 40px;
+    }
+    .event-shape img {
+      width: 190px;
+      left: 70px;
+    }
+    .event-shape.event-shape-2 img {
+      right: 70px;
+    }
+    .event-btn a {
+      font-size: 18px;
+    }
+    .single-event h4 {
+      font-size: 24px;
+    }
+  }
+  
+    /* tablet */
+  @media (max-width: 992px){
+    .event-title span {
+      font-size: 24px;
+    }
+    .event-shape img {
+      width: 150px;
+    }
+   
+  }
+  
+  /* mobile version */
+  @media(max-width: 767px){
+    .event-title span {
+      font-size: 18px;
+    }
+    .event-active.owl-carousel {
+      padding: 0 20px;
+    }
+    .btn-style {
+      font-size: 20px;
+      width: 255px;
+    }
+  
+  }
